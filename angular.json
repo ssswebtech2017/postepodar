@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "saptagiri": {
+    "postepodar": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/saptagiri",
+            "outputPath": "dist/postepodar",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "saptagiri:build"
+            "browserTarget": "postepodar:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "saptagiri:build:production"
+              "browserTarget": "postepodar:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "saptagiri:build"
+            "browserTarget": "postepodar:build"
           }
         },
         "test": {
@@ -99,9 +99,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/scss/bootstrap.scss",
-              "src/assets/icomoon/style.scss",
-              "src/assets/scss/newstyle.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -123,15 +121,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "saptagiri:serve"
+            "devServerTarget": "postepodar:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "saptagiri:serve:production"
+              "devServerTarget": "postepodar:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "saptagiri"
+  "defaultProject": "postepodar"
 }
